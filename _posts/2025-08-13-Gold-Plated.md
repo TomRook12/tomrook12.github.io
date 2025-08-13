@@ -16,7 +16,8 @@ To address this issue I would like to use the term Gold Plating - a term borrowe
 At first glance, gold plating might seem like a sign of dedication—enhancing the features, polishing the build and making a product shine. However, in software development, it can be harmful. A gold plated feature is crafted before it even reaches the user. It’s extra work, often outside the original scope, that makes our software more brittle and harder to maintain.
 
 What if users don’t like the extra features? What if the additional work introduces bugs or technical debt? In that case, we’ve sunk extra time into something that might not add value, and our project suffers as a result.
-Why do we Gold Plate?
+
+##Why do we Gold Plate?
 How do we end up gold plating? In my opinion the most gold plating is rooted in two places: poorly written requirements and anxiety.
 
 Poorly Written Requirements can leave room for interpretation, leading to unnecessary enhancements and protracted development times.
@@ -27,5 +28,5 @@ Of these the only issue ever really dealt with is poorly written requirements, e
 Anxiety is a broad and far reaching topic that I won’t even pretend to be qualified enough in but in the context of Gold Plating I would like to add some things that have helped me:
 Communicate Early and Often Speaking with users, showing what is going. Not only does this keep you grounded it also stops you from building in isolation.
 Break features into manageable chunks Small lightweight features are easy to deliver, it is easy to change direction off the back of them as they are only small and lightweight!
-How do we avoid it?
+## How do we avoid it?
 The best remedy is to get it out! Instead of spending ages perfecting something in isolation to the requirements and getting people hands on, early. Get people hands on and get real feedback, the sooner the better! Writing small focused user stories, delivering them early and often, braking the isolation cycle and utilising the people your feature is made for! Not only will users appreciate being hands on with something, the fact you have given it to them with the express purpose of getting their feedback will build trust and rapport like nothing else. Giving your team features champions and allies across the business.
