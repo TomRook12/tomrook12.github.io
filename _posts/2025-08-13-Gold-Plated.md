@@ -5,7 +5,7 @@ date: 2025-08-13
 author: tom
 author_profile: /about/
 categories: [technology, Change Management]
-image: /assets/images/Summer-25-BRR.png
+image: /assets/images/Gold-Plated.png
 tags: [technology, Change Management]
 ---
 I feel like over the past few years I have been locked in a personal and professional struggle with perfection. (Though personally it has been a lot longer than the past few years. But I’ll save the therapy sessions for another time…) I often find myself in conversation about a feature or a story and the idea of ‘just a little bit more’, ‘can we just…’ or ‘what about…’ creeps in. When these ideas aren’t tackled there and then it usually involves a review, a rebuild or going back to stakeholders for more requirements and clarifications, whilst this is sometimes valuable I often find it serves to impede the velocity of the project, bog it down in what-ifery and ultimately this type of conversation usually occurs out of sight of the people actually receiving/requesting the feature. Maybe that last one is my least favourite of the bunch
