@@ -17,7 +17,7 @@ At first glance, gold plating might seem like a sign of dedication—enhancing t
 
 What if users don’t like the extra features? What if the additional work introduces bugs or technical debt? In that case, we’ve sunk extra time into something that might not add value, and our project suffers as a result.
 
-##Why do we Gold Plate?
+## Why do we Gold Plate?
 How do we end up gold plating? In my opinion the most gold plating is rooted in two places: poorly written requirements and anxiety.
 
 Poorly Written Requirements can leave room for interpretation, leading to unnecessary enhancements and protracted development times.
