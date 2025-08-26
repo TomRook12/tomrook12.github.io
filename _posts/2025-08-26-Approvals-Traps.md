@@ -10,6 +10,7 @@ tags: [technology,  Salesforce, Flow]
 ---
 
 Another flow approval post? I know! I am at the risk of turning this into a Flow Approval blog, I just love them so much. I thought I would share some of the things that I struggled to get my head around. 
+
 # Little Things to Trip you Up
 Minor annoyances? Slight issues? No matter what these things gave me pause and I wasn’t expecting them to work in this way…
 ## User Resource takes a Username not a User ID
