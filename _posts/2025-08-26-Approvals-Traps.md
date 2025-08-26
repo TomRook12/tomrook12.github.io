@@ -9,7 +9,7 @@ image: /assets/images/FlowApprovalTraps/gowiththeflow.png
 tags: [technology,  Salesforce, Flow]
 ---
 
-Another flow approval post? I know! I am at the risk of turning this into a Flow Approval blog, I just love them so much. I thought I would share some of the things that I struggled to get my head around. 
+Another flow approval post? I know! I am at the risk of turning this into a Flow Approval blog, I just love them so much. I thought I would share some of the things that I struggled to get my head around, kept me up or I just had to work out. I wanted this post to me eductaional, however I think it has turned into a semi rant. That is kind of educational right?
 
 # Little Things to Trip you Up
 Minor annoyances? Slight issues? No matter what these things gave me pause and I wasn’t expecting them to work in this way…
