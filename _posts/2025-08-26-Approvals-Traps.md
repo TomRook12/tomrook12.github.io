@@ -5,7 +5,7 @@ date: 2025-08-26
 author: tom
 author_profile: /about/
 categories: [technology, Salesforce, Flow]
-image: /assets/images/Gold-Plated.png
+image: /assets/images/FlowApprovalTraps/gowiththeflow.png
 tags: [technology,  Salesforce, Flow]
 ---
 
@@ -51,4 +51,4 @@ MY GOSH WHAT IS GOING ON HERE. A sea of SOAP API errors. The errors from these o
 
 Actually this last one might about to be fixed in Winter '26! Keep your eyes out! 
 
-That is it really, was this really a helpful post or a chance for me to get somethings off my chest? Cast them into the world? Let me know what you think, what 
+That is it really, was this really a helpful post or a chance for me to get somethings off my chest? Cast them into the world? Let me know what you think and what tripped you up when you first started working with approval flows.
