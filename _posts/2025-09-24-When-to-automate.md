@@ -5,7 +5,7 @@ date: 2025-09-23
 author: tom
 author_profile: /about/
 categories: [technology, Salesforce, Automation]
-image: /assets/images/Summer-25-BRR.png
+image: /assets/images/FlowAutomate.png
 tags: [technology, Salesforce, Automation]
 ---
 
