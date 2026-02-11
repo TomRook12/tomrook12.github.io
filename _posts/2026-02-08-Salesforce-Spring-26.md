@@ -10,7 +10,7 @@ tags: [technology, Salesforce, AI, Agentforce, Coding]
 Back again! Salesforce's Spring ‘26 release brings with it a whole host of features, I have trawled the release notes to bring you the best that spring ‘26 has to offer! Check out what caught my eye, and what I think you should be excited to learn about!
 
 ### Flow Analytics on the Canvas
-I am actually so excitws for this singular feature, I have spent a worryingly large amount of time trying to catch flow errors.Trawling through the automation app’s monitor page, deciphering user descriptions of where their issue lies, interprting screenshots of lord knows what and where. Well I now have a helping hand in that area from something that started out as a Data 360 only Feature. On Canvas insights gives an insight (ha) into flow runs statuses, total runs average duration and some other things give appropriate licences (engagement metrics with marketing cloud next and other such things!)
+I am actually so excited for this singular feature, I have spent a worryingly large amount of time trying to catch flow errors. Trawling through the automation app’s monitor page, deciphering user descriptions of where their issue lies, interprting screenshots of lord knows what and where. Well I now have a helping hand in that area from something that started out as a Data 360 only Feature. On Canvas insights gives an insight (ha) into flow runs statuses, total runs average duration and some other things given appropriate licences (engagement metrics with marketing cloud next and other such things!)
 
 Just knowing how often a flow runs/doesn't run is enough for me!
 
@@ -21,7 +21,9 @@ Just knowing how often a flow runs/doesn't run is enough for me!
 ### Better Flow navigation
 For those in the flow-nation, followers of Obiwan Flow-nobi and students of Ang the Last Flow Bender we have spent many collective hours navigating the flow canvas. So you'll be happy to hear this has received some love from Salesforce with TWO whole changes. Firstly navigation is updated, instead of click and hold navigation, you can use your trackpad, scroll wheel and arrow keys or the recently added on screen scroll bars to zip around. 
 
-The second navigation enhancement is collapsible flow elements, this apples to Wait, Decision, Loop, Path Experiment, and Async Actions using a handy dandy arrow next to the element they can be collapsed/uncollapsed and your browser even remembers the configuration each time so if you always hide the Async path it will stay hidden! (Should mention these things seem to work best in Auto-Layout with collapsible elements not available at all in Free-Form)
+The second navigation enhancement is collapsible flow elements, this apples to Wait, Decision, Loop, Path Experiment, and Async Actions using a handy dandy arrow next to the element they can be collapsed/uncollapsed and your browser even remembers the configuration each time so if you always hide the Async path it will stay hidden! 
+
+(Should mention for both of these they seem to work best in Auto-Layout with collapsible elements not available at all in Free-Form)
 
 ![TheCanvasIsLit.png]({{site.baseurl}}/assets/images/Spring26/TheCanvasIsLit.png)
 
