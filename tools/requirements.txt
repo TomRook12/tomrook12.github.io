@@ -1,0 +1,6 @@
+anthropic>=0.40.0
+google-generativeai>=0.8.0
+python-frontmatter>=1.1.0
+python-slugify>=8.0.0
+Pillow>=10.0.0
+PyYAML>=6.0

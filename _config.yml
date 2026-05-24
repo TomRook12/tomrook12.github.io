@@ -1,3 +1,7 @@
+exclude:
+  - drafts/
+  - tools/
+
 title: Tom Rook
 author: Tom Rook
 logo: /assets/images/logo.png
