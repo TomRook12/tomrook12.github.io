@@ -1,9 +1,17 @@
 ---
-title: "Why Salesforce Flow is Eating Apex (And Why Thats Okay)"
-date: 2026-06-15
+layout: post
+title: Why Salesforce Flow is Eating Apex (And Why Thats Okay)
+date: '2026-06-15'
+author: tom
+author_profile: /about/
+categories: [Salesforce, Automation, Development, Architecture]
+tags: [Salesforce Flow, Apex, Automation, Process Builder, Low-Code, Declarative Development]
+image: /assets/images/placeholder.jpg
+description: Explore why Salesforce Flow has evolved into a powerful automation platform
+  and what it means for developers and architects choosing between Flow and Apex.
 ---
 
-If you've spent any time in the Salesforce ecosystem over the last few years, you will of noticed a quiet revolution happening. [[Salesforce Flow]] have gone from being a janky point-and-click tool that developers quietly despised, to a genuinely powerful automation platform that can handles most of what used to require custom Apex code.
+If you've spent any time in the Salesforce ecosystem over the last few years, you will of noticed a quiet revolution happening. Salesforce Flow have gone from being a janky point-and-click tool that developers quietly despised, to a genuinely powerful automation platform that can handles most of what used to require custom Apex code.
 
 This isn't a post about weather you should use Flow or Apex. That debates been done to death. This is about understanding *why* flow has got so good, and what it means for the way we builds solutions going forward.
 
@@ -13,17 +21,17 @@ Back in the day — lets say pre-Spring '21 — Flow was limited. You could do b
 
 The tooling was also, frankly, terrible. The canvas was sluggish, debugging was a nightmare, and if you dared to open a Flow in a sandbox that hadn't been refreshed recently, god help you.
 
-![[flow-diagram.png]]
+!flow-diagram.png
 
 Developers had good reasons to be skeptical. Flow felt like a toy. A expensive, governor-limit-consuming toy that required a lot of clicks to do things that 10 lines of code could do better.
 
 ## What Changed
 
-[[Einstein AI|Einstein]] and automation capabilities has come a long way. But the real turning point wasn't AI — it was three things:
+Einstein and automation capabilities has come a long way. But the real turning point wasn't AI — it was three things:
 
 1. **Debug logs in Flow** — suddenly you could actually see what was going wrong
 2. **Reactive Screens** — Flow screens that responded to user input without a server round-trip, closing the gap with Visualforce
-3. **The death of Workflow Rules and Process Builder** — Salesforce essentially *forcing* the ecosystem onto Flow by retiring the alternatives #salesforce #automation
+3. **The death of Workflow Rules and Process Builder** — Salesforce essentially *forcing* the ecosystem onto Flow by retiring the alternatives  
 
 That last point is underrated. When Salesforce announced the retirement of Workflow Rules and Process Builder, millions of automations had to be migrated. That migration wave forced the entire ecosystem to get comfortable with Flow in a way that voluntary adoption never would have achieved.
 
@@ -56,4 +64,4 @@ Flows rise isn't a threat to developers — its an opportunity to shift up the v
 
 The ecosystem is better for having good declarative tooling. And if you haven't given modern Flow a proper look recently, you might be supprised at how far its come.
 
-#Salesforce #Flow #Apex #Automation
+   
