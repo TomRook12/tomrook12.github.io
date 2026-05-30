@@ -13,6 +13,7 @@ from pathlib import Path
 
 import frontmatter
 import anthropic
+from PIL import Image
 import yaml
 from slugify import slugify as _slugify
 
@@ -177,18 +178,22 @@ def generate_image(content, title, slug, client):
         print(f"GEMINI_API_KEY not set — skipping image generation.\nPrompt: {image_prompt}", file=sys.stderr)
         return "/assets/images/placeholder.jpg", image_prompt
 
-    import google.generativeai as genai
+    from google import genai as ggenai
+    from google.genai import types as gtypes
 
-    genai.configure(api_key=gemini_key)
+    gclient = ggenai.Client(api_key=gemini_key)
     try:
-        model = genai.ImageGenerationModel("imagen-3.0-generate-002")
-        result = model.generate_images(
+        response = gclient.models.generate_images(
+            model="imagen-3.0-generate-002",
             prompt=image_prompt,
-            number_of_images=1,
-            aspect_ratio="16:9",
+            config=gtypes.GenerateImagesConfig(
+                number_of_images=1,
+                aspect_ratio="16:9",
+                output_mime_type="image/png",
+            ),
         )
     except Exception as exc:
-        # Common causes: free-tier key (billing not enabled), quota exceeded, safety filter.
+        # Common causes: billing not enabled, quota exceeded, safety filter.
         print(
             f"Gemini Imagen failed ({exc.__class__.__name__}: {exc})\n"
             "Falling back to placeholder image.\n"
@@ -198,22 +203,7 @@ def generate_image(content, title, slug, client):
         return "/assets/images/placeholder.jpg", image_prompt
 
     dest = REPO_ROOT / "assets" / "images" / f"{slug}-cover.png"
-    image_obj = result.images[0]
-
-    # Save using whichever attribute is available in the installed SDK version
-    if hasattr(image_obj, "_pil_image"):
-        image_obj._pil_image.save(str(dest))
-    elif hasattr(image_obj, "image_data"):
-        from PIL import Image
-        Image.open(io.BytesIO(image_obj.image_data)).save(str(dest))
-    else:
-        print(
-            "Could not extract image from Gemini response — falling back to placeholder.\n"
-            f"Prompt was: {image_prompt}",
-            file=sys.stderr,
-        )
-        return "/assets/images/placeholder.jpg", image_prompt
-
+    Image.open(io.BytesIO(response.generated_images[0].image.image_bytes)).save(str(dest))
     return f"/assets/images/{slug}-cover.png", image_prompt
 
 
