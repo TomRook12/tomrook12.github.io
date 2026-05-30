@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Salesforce Flow is Eating Apex (And Why Thats Okay)
-date: '2026-06-15'
+date: '2026-05-30'
 author: tom
 author_profile: /about/
 categories: [Salesforce, Automation, Development, Architecture]
