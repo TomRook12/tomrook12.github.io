@@ -179,31 +179,31 @@ def generate_image(content, title, slug, client):
         return "/assets/images/placeholder.jpg", image_prompt
 
     from google import genai as ggenai
-    from google.genai import types as gtypes
 
     gclient = ggenai.Client(api_key=gemini_key)
     try:
-        response = gclient.models.generate_images(
-            model="imagen-3.0-generate-002",
-            prompt=image_prompt,
-            config=gtypes.GenerateImagesConfig(
-                number_of_images=1,
-                aspect_ratio="16:9",
-                output_mime_type="image/png",
-            ),
+        response = gclient.models.generate_content(
+            model="gemini-3.1-flash-image",
+            contents=[image_prompt],
         )
+        dest = REPO_ROOT / "assets" / "images" / f"{slug}-cover.png"
+        # Iterate parts; skip "thought" interim images, take the last real image.
+        final_image_part = None
+        for part in response.parts:
+            if part.inline_data is not None and not getattr(part, "thought", False):
+                final_image_part = part
+        if final_image_part is None:
+            raise RuntimeError("No image part found in Gemini response")
+        final_image_part.as_image().save(str(dest))
     except Exception as exc:
-        # Common causes: billing not enabled, quota exceeded, safety filter.
         print(
-            f"Gemini Imagen failed ({exc.__class__.__name__}: {exc})\n"
+            f"Gemini image generation failed ({exc.__class__.__name__}: {exc})\n"
             "Falling back to placeholder image.\n"
             f"Generated prompt was: {image_prompt}",
             file=sys.stderr,
         )
         return "/assets/images/placeholder.jpg", image_prompt
 
-    dest = REPO_ROOT / "assets" / "images" / f"{slug}-cover.png"
-    Image.open(io.BytesIO(response.generated_images[0].image.image_bytes)).save(str(dest))
     return f"/assets/images/{slug}-cover.png", image_prompt
 
 
