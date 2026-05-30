@@ -180,12 +180,22 @@ def generate_image(content, title, slug, client):
     import google.generativeai as genai
 
     genai.configure(api_key=gemini_key)
-    model = genai.ImageGenerationModel("imagen-3.0-generate-002")
-    result = model.generate_images(
-        prompt=image_prompt,
-        number_of_images=1,
-        aspect_ratio="16:9",
-    )
+    try:
+        model = genai.ImageGenerationModel("imagen-3.0-generate-002")
+        result = model.generate_images(
+            prompt=image_prompt,
+            number_of_images=1,
+            aspect_ratio="16:9",
+        )
+    except Exception as exc:
+        # Common causes: free-tier key (billing not enabled), quota exceeded, safety filter.
+        print(
+            f"Gemini Imagen failed ({exc.__class__.__name__}: {exc})\n"
+            "Falling back to placeholder image.\n"
+            f"Generated prompt was: {image_prompt}",
+            file=sys.stderr,
+        )
+        return "/assets/images/placeholder.jpg", image_prompt
 
     dest = REPO_ROOT / "assets" / "images" / f"{slug}-cover.png"
     image_obj = result.images[0]
@@ -197,7 +207,12 @@ def generate_image(content, title, slug, client):
         from PIL import Image
         Image.open(io.BytesIO(image_obj.image_data)).save(str(dest))
     else:
-        raise RuntimeError("Cannot extract image from Gemini response — check SDK version.")
+        print(
+            "Could not extract image from Gemini response — falling back to placeholder.\n"
+            f"Prompt was: {image_prompt}",
+            file=sys.stderr,
+        )
+        return "/assets/images/placeholder.jpg", image_prompt
 
     return f"/assets/images/{slug}-cover.png", image_prompt
 
