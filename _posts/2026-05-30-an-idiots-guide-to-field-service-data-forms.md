@@ -1,10 +1,15 @@
 ---
-Title: An idiots guide to Field Service Data Forms
-status: Draft
-tags:
-  - Salesforce
-  - FSL
-  - Product Management
+layout: post
+title: An idiots guide to Field Service Data Forms
+date: '2026-05-30'
+author: tom
+author_profile: /about/
+categories: [Salesforce, Field Service, Mobile, Flows]
+tags: [Field Service, Data Capture, Screen Flow, Mobile App, Salesforce Setup, Field
+    Service Mobile]
+image: /assets/images/placeholder.jpg
+description: A practical setup guide for Salesforce Field Service Data Capture flows,
+  covering org configuration, permissions, sharing rules, and mobile app deployment.
 ---
 
 # An idiots guide to Salesforce Field Service Data Forms
