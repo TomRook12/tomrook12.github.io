@@ -23,7 +23,6 @@ This is the guide I wish I found when I was trying to configure these frankly fa
 So if you happen to have field service and want a slick UI for your field service workers to capture data in the field then jump into this guide! The UI is great but getting there can be a struggle, I won’t cover actually making a flow, I’ll leave that up to you. Instead we’ll look into getting these things up and running.
 
 
-> [!Note] The key concept
 > Capture information, signatures, images and make DML statements directly in the Field Service App. Fully offline utilising a specific type of screen flow and a special junction object that connects those screen flows to records of Work Orders, Service Appointments, Assets and Custom Objects.
 
 
