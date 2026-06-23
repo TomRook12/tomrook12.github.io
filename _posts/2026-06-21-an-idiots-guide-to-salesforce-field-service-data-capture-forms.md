@@ -17,7 +17,6 @@ tags:
 image: /assets/images/An%20idiots%20guide%20to%20Salesforce%20Field%20Service%20Data%20Capture%20Forms/DataCaptureThumbnail.png
 description: The guide I wish I had, gotcha-by-gotcha to setting up Salesforce Field Service Data Capture flows and forms, from org setup to junction object configuration.
 ---
-# An idiots guide to Salesforce Field Service Data Capture Forms
 
 This is the guide I wish I found when I was trying to configure these frankly fantastic little flows. If you haven't come across this particular type of flow it’s called a Data Capture flow and is specifically available for use with the Field Service mobile app. 
 
