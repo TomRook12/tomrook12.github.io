@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An idiots guide to Salesforce Field Service Data Capture Forms
+title: Get up and running with Field Service Data Capture Forms
 date: 2026-06-21
 author: tom
 author_profile: /about/
@@ -30,7 +30,7 @@ So if you happen to have field service and want a slick UI for your field servic
 
 This knocked me for 6. Unfortunately, Salesforce's help confused me more than anything else. So I spent ages trawling through my org toggling settings in vain. Many, many YouTube videos were consumed. Instead of that nonsense Follow these checks before building your first flow.
 
-1. Enable access to Lightning SDK for Field Service Mobile:  
+1. Enable access to Lightning SDK for Field Service Mobile either:  
 	- **Globally:** Field Service Settings > Enable Lightning SDK for Field Service Mobile. Every field service mobile user gets this.
 	- **Per User:** New Permission Set, System Permissions > Enable Lightning SDK for Field Service Mobile. (Make sure you assign it to your mobile workers!)  
 2. Decide on Sharing for the junction object.
