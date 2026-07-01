@@ -11,7 +11,8 @@ description: A round-up of the flow builder and approvals highlights from the Sa
 ---
 # Salesforce Summer '26
 
-Another 3rd of a year passed, another release another time for me to be late. But there was so much content in this one I could not miss it! There is so much good flow content in here, it's hard to pass up on.
+Another 3rd of a year passed, another release another time for me to be late. But fear not dear viewer I remembered how to post and this information is just about relevant. If you haven't had a poke around yet allow me to take you on a tour of the best flow features that Summer '26 had to offer! 
+
 ## Use Date Operators in Decision Logic
 Super cool logic! So many options, no more creating formulas or fields to try and perform these operations. If the field is date type (crucially not date time, so this doesn't work on Created Date for instance) then you can use:
 - Is Today
