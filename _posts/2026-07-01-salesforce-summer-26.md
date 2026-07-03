@@ -9,7 +9,6 @@ tags: [SalesforceFlow, Automation, Approvals, ReleaseNotes]
 image: /assets/images/Salesforce_Summer_26/SalesforceSummer26Thumbnail.png
 description: A round-up of the flow builder and approvals highlights from the Salesforce Summer '26 release, from date operators to smarter validation and error debugging.
 ---
-# Salesforce Summer '26
 
 Another 3rd of a year passed, another release another time for me to be late. But fear not dear viewer I remembered how to post and this information is just about relevant. If you haven't had a poke around yet allow me to take you on a tour of the best flow features that Summer '26 had to offer! 
 
