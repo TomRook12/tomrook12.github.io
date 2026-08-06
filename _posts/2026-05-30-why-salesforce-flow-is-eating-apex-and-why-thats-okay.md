@@ -5,8 +5,8 @@ date: '2026-05-30'
 author: tom
 author_profile: /about/
 categories: [Salesforce, Automation, Development, Architecture]
-tags: [Salesforce Flow, Apex, Automation, Process Builder, Low-Code, Declarative Development]
-image: /assets/images/placeholder.jpg
+tags: [Salesforce Flow, Apex, Automation, Process Builder, Low-Code, Workflow]
+image: /assets/images/why-salesforce-flow-is-eating-apex-and-why-thats-okay-cover.png
 description: Explore why Salesforce Flow has evolved into a powerful automation platform
   and what it means for developers and architects choosing between Flow and Apex.
 ---
@@ -63,5 +63,3 @@ The real skill now is **knowing when to escalate**. Recognising when a Flow is g
 Flows rise isn't a threat to developers — its an opportunity to shift up the value chain. Let Flow handle the routine, and use your Apex skills for the genuinely complex stuff that needs them.
 
 The ecosystem is better for having good declarative tooling. And if you haven't given modern Flow a proper look recently, you might be supprised at how far its come.
-
-   
